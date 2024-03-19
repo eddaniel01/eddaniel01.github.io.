@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.section {
+    border: 1px solid black;
+    margin: 0 20px 40px; /* Agregar espacio a los lados de cada sección y espacio inferior */
+    padding: 20px;
+    position: relative;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.section:not(:first-child) {
+    margin-top: 40px; /* Agregar margen superior a todas las secciones excepto la primera */
+}
+
+.section h2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+/* Breakpoints */
+
+/* Móvil */
+@media screen and (max-width: 767px) {
+    .section {
+        width: calc(100% - 40px); /* Considerar el espacio lateral */
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .section:nth-child(2),
+    .section:nth-child(3) {
+        width: 47%; /* Las secciones 2 y 3 ocupan el 50% del ancho cada una */
+        float: left; /* Flotar las secciones para que estén una al lado de la otra */
+        margin-right: 0; /* Se elimina el margen derecho */
+        margin-bottom: 20px; /* Añadir margen inferior para separar las secciones */
+    }
+
+    .section:nth-child(4) {
+        width: 96%; /* La sección 4 (Sushi) ocupa toda la fila */
+        clear: both; /* Forzar que la sección 4 comience en una nueva fila */
+    }
+}
+
+
+
+/* Escritorio */
+@media screen and (min-width: 992px) {
+    .section {
+        width: calc(30% - 40px); /* Considerar el espacio lateral */
+        float: left;
+    }
+    .section:nth-child(3) {
+        clear: none;
+    }
+}
