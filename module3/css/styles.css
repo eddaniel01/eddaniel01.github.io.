@@ -1,0 +1,36 @@
+/* Estilo para el encabezado */
+header {
+    margin: 50px 0; /* Agrega un margen superior e inferior para separar el encabezado de las secciones */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen predeterminado del h1 */
+    padding: 20px 0; /* Agrega un espacio interno para el encabezado */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilos para las secciones de Pollo, Carne y Sushi */
+.section {
+    border: 1px solid black;
+    margin: 20px; /* Agregar espacio alrededor de cada sección */
+    padding: 20px;
+    background-color: #ffffff; /* Color de fondo */
+}
+
+.section h2 {
+    background-color: #333; /* Color de fondo del título */
+    color: #ffffff; /* Color del texto del título */
+    padding: 10px 20px; /* Espacio alrededor del título */
+    margin-top: 0; /* Eliminar margen superior del título */
+}
+
+.section p {
+    margin-top: 10px; /* Espacio superior del párrafo */
+}
+
+.really-high-section {
+    background-color: #f0f0f0; /* Cambia el color de fondo según lo desees */
+    min-height: 1000px; /* Establece la altura mínima para requerir desplazamiento hacia abajo */
+    padding: 20px;
+}
